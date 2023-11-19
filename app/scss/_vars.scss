@@ -1,0 +1,38 @@
+// SCSS variables
+
+// Colors
+$default: #171921;
+$white: #fff;
+$grey: #9EA3B5;
+$light-grey: #F3F5F9;
+$dark-grey: #545971;
+$light-blue: #15B2F5;
+$dark-blue: #142257;
+
+// Fonts 
+@mixin plusjakartasans-400 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin plusjakartasans-600 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+} 
+
+@mixin plusjakartasans-700 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin plusjakartasans-800 {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+
