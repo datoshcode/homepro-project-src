@@ -4,6 +4,28 @@
 @import 'libs';
 @import 'global';
 
-/* In which field is the style code indicated */
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 100px;
+        padding: 25px 0;
+    }
+    &__logo-img {
+        margin-bottom: -12px;
+    }
+}
+
+.header-menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+        line-height: 1.12px;
+
+    }
+}
+
 
 @import 'media';

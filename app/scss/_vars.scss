@@ -1,38 +1,43 @@
 // SCSS variables
 
 // Colors
-$default: #171921;
-$white: #fff;
-$grey: #9EA3B5;
-$light-grey: #F3F5F9;
-$dark-grey: #545971;
-$light-blue: #15B2F5;
-$dark-blue: #142257;
+$accentColor: #3685fb;
+$defaultColor: #002248;
+$greenColor: #00b3a0;
+$blueColor: #0167ff;
+$whiteColor: #ffffff;
+$greyColor: #697687;
+$lightGreyColor: #f8f8f8;
+$brightGreyColor: #fcfcfc;
+$yellowColor: #f4c82a;
 
-// Fonts 
-@mixin plusjakartasans-400 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+// Fonts
+@mixin airbnbCerealAppBook-400 {
+  font-family: "Airbnb Cereal App Book", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-@mixin plusjakartasans-600 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 600;
+@mixin airbnbCerealAppMedium-500 {
+  font-family: "Airbnb Cereal App Medium", sans-serif;
+  font-weight: 500;
   font-style: normal;
-} 
+}
 
-@mixin plusjakartasans-700 {
-  font-family: "Plus Jakarta Sans", sans-serif;
+@mixin airbnbCerealAppBold-700 {
+  font-family: "Airbnb Cereal App Bold", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-@mixin plusjakartasans-800 {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 800;
+@mixin eksellDisplayMedium-500 {
+  font-family: "Eksell Display Medium", serif;
+  font-weight: 500;
   font-style: normal;
 }
 
-
-
+@mixin eksellDisplaySmall-550 {
+  font-family: "Eksell Display Small", serif;
+  font-weight: 550;
+  font-style: normal;
+}

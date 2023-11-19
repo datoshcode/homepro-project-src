@@ -1,6 +1,5 @@
 // Global styles */
 
-
 // Glue footer to the bottom
 html,
 body {
@@ -18,21 +17,32 @@ body {
 }
 // END/ Glue footer to the bottom
 
+body {
+  @include airbnbCerealAppBook-400;
+  font-size: 1rem; // 16px
+  color: $defaultColor;
+  line-height: 1.75;
+  //  font-family: 'Roboto', sans-serif;
+}
 
- body {
-     @include plusjakartasans-400;
-     font-size: 1rem;   // 16px
-     color: $default;
-     display: flex;
-     flex-direction: column;
- }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.9375rem; // 0 15px
+}
 
- .container {
-     max-width: 1230px;
-     margin: 0 auto;
-     padding: 0 .9375rem; // 0 15px
- }
+.btn {
+  @include airbnbCerealAppMedium-500;
+  color: $whiteColor;
+  text-align: center;
+  font-style: normal;
+  line-height: 1.12; /* 112.5% */
+  background-color: $accentColor;
+  border-radius: .625rem;
+  padding: 1rem 1.8125rem;
+}
 
-
-
-
+.logo-img {
+  width: 106px;
+  height: 45px;
+}
