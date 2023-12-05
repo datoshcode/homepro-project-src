@@ -1,0 +1,43 @@
+// SCSS variables
+
+// Colors
+$accentColor: #3685fb;
+$defaultColor: #002248;
+$greenColor: #00b3a0;
+$blueColor: #0167ff;
+$whiteColor: #ffffff;
+$greyColor: #697687;
+$lightGreyColor: #f8f8f8;
+$brightGreyColor: #fcfcfc;
+$yellowColor: #f4c82a;
+
+// Fonts
+@mixin airbnbCerealAppBook-400 {
+  font-family: "Airbnb Cereal App Book", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@mixin airbnbCerealAppMedium-500 {
+  font-family: "Airbnb Cereal App Medium", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin airbnbCerealAppBold-700 {
+  font-family: "Airbnb Cereal App Bold", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin eksellDisplayMedium-500 {
+  font-family: "Eksell Display Medium", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin eksellDisplaySmall-550 {
+  font-family: "Eksell Display Small", serif;
+  font-weight: 550;
+  font-style: normal;
+}
