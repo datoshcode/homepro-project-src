@@ -5,13 +5,18 @@
   <section class="promo">
     <div class="container">
       <div class="promo__inner">
+        <!-- Left block -->
         <div class="promo__item">
+          <!-- Promo image -->
           <img
-            class="promo__image-bg"
+            class="promo__image"
             src="../images/promo-bg.webp"
             alt="Hotel room with a swimming pool in the mountains"
           />
         </div>
+        <!-- END/ Left block -->
+
+        <!-- Right block -->
         <div class="promo__item">
           <h1 class="promo__item-title title">Book Now</h1>
           <h4 class="promo__item-subtitle subtitle">
@@ -28,12 +33,14 @@
             >
           </div>
         </div>
+        <!-- END/ Right block -->
       </div>
 
       <!-- Selects -->
       <div class="promo__nav-wrapper">
         <nav class="promo__nav">
           <ul class="promo__nav-list">
+            <!-- Location list -->
             <li class="promo__nav-item">
               <a class="promo__nav-link" href="#">Location</a>
               <ul class="promo__subnav-list">
@@ -48,6 +55,9 @@
                 </li>
               </ul>
             </li>
+            <!-- END/ Location list -->
+
+            <!-- Your Category list -->
             <li class="promo__nav-item">
               <a class="promo__nav-link" href="#">Your Category</a>
               <ul class="promo__subnav-list">
@@ -62,6 +72,9 @@
                 </li>
               </ul>
             </li>
+            <!-- END/ Your Category list -->
+
+            <!-- Total Person list -->
             <li class="promo__nav-item">
               <a class="promo__nav-link" href="#">Total Person</a>
               <ul class="promo__subnav-list">
@@ -76,8 +89,16 @@
                 </li>
               </ul>
             </li>
+            <!-- END/ Total Person list -->
+
+            <!-- Button for registration -->
             <li class="promo__nav-item promo__nav-btn">
-              <a class="promo__nav-btn-link" href="#">Book Now</a>
+              <a
+                class="promo__nav-btn-link"
+                aria-label="Book a room for a specific date"
+                href="#"
+                >Book Now</a
+              >
             </li>
           </ul>
         </nav>
@@ -85,6 +106,44 @@
     </div>
   </section>
   <!-- END/ Section promo -->
+
+  <!-- Section steps -->
+  <section class="steps">
+    <div class="container">
+      <div class="steps__top">
+        <h2 class="steps__title title">3 steps for the perfect trip</h2>
+        <h4 class="steps__subtitle subtitle">Find travel perfection</h4>
+        <p class="steps__text">
+          Naturally head of the class whenit comes to luxury travel
+          planning,bbecause we do more homework than anyone else
+        </p>
+      </div>
+      <div class="steps__inner">
+        <div class="steps__item">
+          <img class="steps__item-img" src="../images/steps-img1.webp" alt="Chat" />
+          <h3 class="steps__item-title">Tell us what you want to do</h3>
+          <p class="steps__item-text">
+            Fill out a 2-minute questionnaire about how you like to travel
+          </p>
+        </div>
+        <div class="steps__item">
+          <img class="steps__item-img" src="../images/steps-img2.webp" alt="Calendar" />
+          <h3 class="steps__item-title">Share your travel preference</h3>
+          <p class="steps__item-text">
+            It all happends online,We recommend everything to your vision
+          </p>
+        </div>
+        <div class="steps__item">
+          <img class="steps__item-img" src="../images/steps-img3.webp" alt="Stars" />
+          <h3 class="steps__item-title">We’ll give you recommendations</h3>
+          <p class="steps__item-text">
+            Once you’re happy with your final plan, We handle everything for you
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END/ Section steps -->
 </main>
 
 <!--=include footer.html-->
