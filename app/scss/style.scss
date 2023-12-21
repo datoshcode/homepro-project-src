@@ -1,174 +1,301 @@
-@import "vars";
-@import "fonts";
-@import "optimize";
-@import "libs";
-@import "global";
+@import 'vars';
+@import 'fonts';
+@import 'optimize';
+@import 'libs';
+@import 'global';
 
+// Header
 .header {
-  background-color: $lightGreyColor;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 100px;
-    padding: 25px 0;
-  }
-  &__logo-img {
-    margin-bottom: -12px;
-  }
+	background-color: $lightGreyColor;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 100px;
+		padding: 25px 0;
+	}
+	&__logo-img {
+		margin-bottom: -12px;
+	}
 }
 
 .header-menu {
-  &__list {
-    display: flex;
-    align-items: center;
-    gap: 0 40px;
-    line-height: 1.12px;
-  }
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 0 40px;
+		line-height: 1.12px;
+	}
 }
+// END/ Header
 
+// section Promo
 .promo {
-  background-color: $lightGreyColor;
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0 78px;
-    padding: 44px 0 145px;
-  }
-  &__item-subtitle {
-    @include eksellDisplaySmall-550;
-    font-size: 60px;
-    line-height: 120%;
-  }
-  &__item-text {
-    line-height: 175%;
-    padding-top: 20px;
-  }
-  &__btn-box {
-    margin-top: 50px;
-  }
-  &__nav-wrapper {
-    position: relative;
-  }
-  &__nav {
-    max-width: 980px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: $whiteColor;
-    filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
-    border-radius: 20px;
-    position: absolute;
-    bottom: -60px;
-  }
-  &__nav-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    @include airbnbCerealAppMedium-500;
-  }
-  &__nav-item {
-    position: relative;
-    margin-left: 70px;
-    background-color: $whiteColor;
-  }
-  &__nav-item:hover .promo__subnav-list {
-    opacity: 1;
-    visibility: visible;
-    background-color: $whiteColor;
-    opacity: 0;
-    transform: translateY(-150%);
-    animation: ani 1s forwards;
-  }
-  &__nav-link {
-    font-size: 20px;
-    position: relative;
-    background-color: transparent;
-    z-index: 10;
-    &::after {
-      position: absolute;
-      content: "";
-      width: 16px;
-      height: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      right: -25px;
-      background-image: url(../images/icons/chevron-down.svg);
-      background-repeat: no-repeat;
-    }
-  }
-  &__subnav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    padding-top: 10px;
-    opacity: 0;
-    visibility: hidden;
-  }
-  &__nav-btn {
-    background-color: $accentColor;
-    height: 100%;
-    padding: 60px 60px 70px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    max-width: 210px;
-    width: 100%;
-  }
-  &__subnav-link {
-    @include airbnbCerealAppBook-400;
-    font-size: 1rem;
-    color: $greyColor;
-    background-color: $whiteColor;
-    padding: 10px;
-    display: block;
-    width: 200px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
-  }
+	background-color: $lightGreyColor;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 0 78px;
+		padding: 44px 0 145px;
+	}
+	&__image {
+		object-fit: cover;
+		width: 589px;
+		height: 100%;
+	}
+	&__item-subtitle {
+		@include eksellDisplaySmall-550;
+		font-size: 60px;
+		line-height: 120%;
+	}
+	&__item-text {
+		line-height: 175%;
+	}
+	&__btn-box {
+		margin-top: 50px;
+	}
+	&__nav-wrapper {
+		position: relative;
+	}
+	&__nav {
+		max-width: 980px;
+		width: 100%;
+		margin: 0 auto;
+		background-color: $whiteColor;
+		filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
+		border-radius: 20px;
+		position: absolute;
+		bottom: -60px;
+	}
+	&__nav-list {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@include airbnbCerealAppMedium-500;
+	}
+	&__nav-item {
+		position: relative;
+		margin-left: 70px;
+		background-color: $whiteColor;
+	}
+	&__nav-item:hover .promo__subnav-list {
+		opacity: 1;
+		visibility: visible;
+		background-color: $whiteColor;
+		opacity: 0;
+		transform: translateY(-150%);
+		animation: ani 1s forwards;
+	}
+	&__nav-link {
+		font-size: 20px;
+		position: relative;
+		background-color: transparent;
+		z-index: 10;
+		&::after {
+			position: absolute;
+			content: '';
+			width: 16px;
+			height: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			right: -25px;
+			background-image: url(../images/icons/chevron-down.svg);
+			background-repeat: no-repeat;
+		}
+	}
+	&__subnav-list {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		padding-top: 10px;
+		opacity: 0;
+		visibility: hidden;
+	}
+	&__nav-btn {
+		background-color: $accentColor;
+		height: 100%;
+		padding: 60px 60px 70px;
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		max-width: 210px;
+		width: 100%;
+	}
+	&__subnav-link {
+		@include airbnbCerealAppBook-400;
+		font-size: 1rem;
+		color: $greyColor;
+		background-color: $whiteColor;
+		padding: 10px;
+		display: block;
+		width: 200px;
+		border-bottom-right-radius: 20px;
+		border-bottom-left-radius: 20px;
+		filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
+	}
 
-  &__subnav-link:hover {
-    color: $accentColor;
-    transition: all 0.3s ease;
-  }
+	&__subnav-link:hover {
+		color: $accentColor;
+		transition: all 0.3s ease;
+	}
 
-  &__nav-btn-link {
-    font-size: 18px;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-top: 10px;
-    color: $whiteColor;
-    &::before {
-      position: absolute;
-      content: "";
-      width: 22px;
-      height: 24px;
-      top: -20px;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      background-image: url(../images/icons/calendar.svg);
-      background-repeat: no-repeat;
-    }
-  }
+	&__nav-btn-link {
+		font-size: 18px;
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		padding-top: 10px;
+		color: $whiteColor;
+		&::before {
+			position: absolute;
+			content: '';
+			width: 22px;
+			height: 24px;
+			top: -20px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			background-image: url(../images/icons/calendar.svg);
+			background-repeat: no-repeat;
+		}
+	}
 }
 
+// Animation for room booking pop-up list
 @keyframes ani {
-  0% {
-    transform: translateY(-15%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+	0% {
+		transform: translateY(-15%);
+	}
+	100% {
+		transform: translateY(0);
+	}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+// END/ section Promo
+
+// setion Steps
+.steps {
+	padding-bottom: 120px;
+	&__top {
+		text-align: center;
+		max-width: 568px;
+		margin: 0 auto;
+	}
+	&__title {
+		margin-top: 192px;
+	}
+	&__text {
+		color: $greyColor;
+		line-height: 175%;
+	}
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		margin-top: 70px;
+	}
+	&__item {
+		text-align: center;
+		border: 2px solid $lightGreyColor;
+		border-radius: 10px;
+		padding: 60px 25px 70px;
+	}
+	&__item-title {
+		font-size: 20px;
+		font-weight: 500;
+		line-height: 140%;
+		padding-top: 47px;
+	}
+	&__item-text {
+		font-size: 1rem;
+		font-weight: 400;
+		color: $greyColor;
+		padding-top: 20px;
+	}
 }
 
-@import "media";
+// Locations
+.locations {
+	background-color: $lightGreyColor;
+	padding: 120px 0;
+	&__top {
+		position: relative;
+	}
+	&__text {
+		padding-bottom: 70px;
+	}
+	&__slider {
+		width: 1180px;
+		overflow: hidden;
+	}
+	&__slider-img {
+		border-radius: 10px;
+		border: 6px solid #fff;
+		max-width: 370px;
+		width: 100%;
+	}
+	&__slider-item {
+		position: relative;
+		width: 370px;
+	}
+	&__slider-box {
+		position: absolute;
+		bottom: 32px;
+		left: 28px;
+		right: 30px;
+		margin: 0 auto;
+		padding: 23px 20px;
+		width: 285px;
+		display: flex;
+		justify-content: space-between;
+		border-radius: 10px;
+		border: 1px solid $grey2Color;
+		background: rgba(0, 34, 72, 0.3);
+		backdrop-filter: blur(10px);
+		color: $whiteColor;
+		font-weight: 500;
+		line-height: 175%;
+	}
+	&__slider-title {
+		@include eksellDisplayMedium-500;
+		font-size: 20px;
+		line-height: 100%;
+	}
+	&__slider-price {
+		font-size: 20px;
+		line-height: 120%;
+	}
+	&__swiper-button {
+		content: '';
+		position: absolute;
+		top: 18%;
+		left: auto;
+		right: 0;
+		width: 130px;
+	}
+}
+.swiper-button-prev {
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/arrow-prev.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.swiper-button-next {
+	width: 50px;
+	height: 50px;
+	background-image: url(../images/arrow-prev.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	transform: rotate(180deg);
+}
+
+@import 'media';
