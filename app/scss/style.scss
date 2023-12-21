@@ -26,6 +26,9 @@
 		gap: 0 40px;
 		line-height: 1.12px;
 	}
+	&__btn {
+		font-weight: 500;
+	}
 }
 // END/ Header
 
@@ -296,6 +299,58 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	transform: rotate(180deg);
+}
+
+.guideline {
+	background-image: url(../images/guideline-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 62px;
+		transform: translateY(100%);
+		align-items: center;
+	}
+	&__item {
+		width: 462px;
+	}
+	&__item-videobtn {
+		background-color: transparent;
+		border: none;
+	}
+	&__text {
+		margin-bottom: 50px;
+	}
+	&__decor-1,
+	&__decor-2 {
+		position: absolute;
+		bottom: -8%;
+	}
+
+	&__decor-1 {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__decor-2 {
+		left: auto;
+		right: 0;
+	}
+
+	&__btn {
+		font-weight: 700;
+		line-height: 125%;
+	}
+}
+
+.videobtn-img {
+	width: 120px;
+	height: 120px;
 }
 
 @import 'media';
