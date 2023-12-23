@@ -381,8 +381,86 @@
 		@include eksellDisplaySmall-550;
 		line-height: 106.25%;
 	}
-	&__indicators-name {
+}
+
+.testimonials {
+	padding-top: 120px;
+	padding-bottom: 50px;
+	text-align: center;
+	background-color: $lightGreyColor;
+
+	&__inner {
+		width: 590px;
+		margin: 0 auto;
 	}
+	&__slider {
+		width: 500px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	&__wrapper {
+		background-image: url(../images/testimonials-bg.webp);
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding: 70px 0 120px;
+		position: relative;
+	}
+
+	&__slider-text {
+		font-size: 14px;
+		line-height: 171%;
+		padding-bottom: 14px;
+	}
+	&__avatar-img {
+		border: 2px solid $whiteColor;
+		border-radius: 50%;
+		width: 98px;
+		height: 98px;
+		margin-bottom: 30px;
+	}
+	&__blockquote {
+		border-radius: 10px;
+		background: $whiteColor;
+		padding: 80px 50px 30px;
+		position: relative;
+	}
+	&__blockquote::before {
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		top: 30px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background-image: url(../images/icons/quotation.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&__author {
+		font-size: 12px;
+		font-weight: 700;
+		color: $defaultColor;
+		font-style: normal;
+		display: block;
+		line-height: 150%;
+	}
+	&__span {
+		font-size: 10px;
+		color: $greyColor;
+		line-height: 140%;
+	}
+}
+
+// Pagination for slider .testimonials__slider
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 60px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	width: 20px;
+	border-radius: 6px;
 }
 
 @import 'media';

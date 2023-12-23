@@ -24,26 +24,16 @@ const swiperOne = new Swiper('.locations__slider', {
       slidesPerView: 3,
     },
   },
-
 });
 
-const swiperTwo = new Swiper('.certificates__slider', {
+const swiperTwo = new Swiper('.testimonials__slider', {
   loop: true,
-  slidesPerView: 3,
-  spaceBetween: 20,
+  slidesPerView: 1,
+  autoplay: {
+    delay: 2000,
+  },
 
   pagination: {
     el: '.swiper-pagination',
-  },
-  breakpoints: {
-    360: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    640: {
-      slidesPerView: 3,
-    },
   },
 });
