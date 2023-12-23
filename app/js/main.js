@@ -37,3 +37,13 @@ const swiperTwo = new Swiper('.testimonials__slider', {
     el: '.swiper-pagination',
   },
 });
+
+
+const swiperThree = new Swiper('.feed__slider', {
+  loop: true,
+  slidesPerView: 4.5,
+
+  autoplay: {
+    delay: 2000,
+  },
+});
