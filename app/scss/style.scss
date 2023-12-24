@@ -11,20 +11,24 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		min-height: 100px;
-		padding: 25px 0;
+		min-height: 6.25rem;
+		padding: 1.5625rem 0;
 	}
 	&__logo-img {
-		margin-bottom: -12px;
+		margin-bottom: -0.75rem;
 	}
 }
 
 .header-menu {
+	order: 0;
 	&__list {
 		display: flex;
 		align-items: center;
-		gap: 0 40px;
+		gap: 0 2.5rem;
 		line-height: 1.12px;
+	}
+	&__btn {
+		font-weight: 500;
 	}
 }
 // END/ Header
@@ -36,8 +40,8 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		gap: 0 78px;
-		padding: 44px 0 145px;
+		gap: 0 4.875rem;
+		padding: 2.75rem 0 9.0625rem;
 	}
 	&__image {
 		object-fit: cover;
@@ -46,14 +50,14 @@
 	}
 	&__item-subtitle {
 		@include eksellDisplaySmall-550;
-		font-size: 60px;
+		font-size: 3.75rem;
 		line-height: 120%;
 	}
 	&__item-text {
 		line-height: 175%;
 	}
 	&__btn-box {
-		margin-top: 50px;
+		margin-top: 3.125rem;
 	}
 	&__nav-wrapper {
 		position: relative;
@@ -64,9 +68,11 @@
 		margin: 0 auto;
 		background-color: $whiteColor;
 		filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
-		border-radius: 20px;
+		border-radius: 1.25rem;
 		position: absolute;
-		bottom: -60px;
+		bottom: -3.75rem;
+		left: 0;
+		right: 0;
 	}
 	&__nav-list {
 		display: flex;
@@ -76,7 +82,7 @@
 	}
 	&__nav-item {
 		position: relative;
-		margin-left: 70px;
+		margin-left: 4.375rem;
 		background-color: $whiteColor;
 	}
 	&__nav-item:hover .promo__subnav-list {
@@ -88,7 +94,7 @@
 		animation: ani 1s forwards;
 	}
 	&__nav-link {
-		font-size: 20px;
+		font-size: 1.25rem;
 		position: relative;
 		background-color: transparent;
 		z-index: 10;
@@ -108,14 +114,14 @@
 		position: absolute;
 		top: 100%;
 		left: 0;
-		padding-top: 10px;
+		padding-top: 0.625rem;
 		opacity: 0;
 		visibility: hidden;
 	}
 	&__nav-btn {
 		background-color: $accentColor;
 		height: 100%;
-		padding: 60px 60px 70px;
+		padding: 3.75rem 3.75rem 4.375rem;
 		border-top-right-radius: 20px;
 		border-bottom-right-radius: 20px;
 		max-width: 210px;
@@ -126,34 +132,34 @@
 		font-size: 1rem;
 		color: $greyColor;
 		background-color: $whiteColor;
-		padding: 10px;
+		padding: 0.625rem;
 		display: block;
 		width: 200px;
-		border-bottom-right-radius: 20px;
-		border-bottom-left-radius: 20px;
 		filter: drop-shadow(0px 40px 170px rgba(0, 34, 72, 0.07));
+		transition: all 0.3s ease;
 	}
 
 	&__subnav-link:hover {
 		color: $accentColor;
-		transition: all 0.3s ease;
+		background-color: $accentColor;
+		color: $whiteColor;
 	}
 
 	&__nav-btn-link {
-		font-size: 18px;
+		font-size: 1.125rem;
 		position: absolute;
-		top: 60px;
+		top: 3.75rem;
 		left: 0;
 		right: 0;
 		text-align: center;
-		padding-top: 10px;
+		padding-top: 0.625rem;
 		color: $whiteColor;
 		&::before {
 			position: absolute;
 			content: '';
 			width: 22px;
 			height: 24px;
-			top: -20px;
+			top: -1.25rem;
 			left: 0;
 			right: 0;
 			margin: 0 auto;
@@ -182,14 +188,14 @@
 
 // setion Steps
 .steps {
-	padding-bottom: 120px;
+	padding-bottom: 7.5rem;
 	&__top {
 		text-align: center;
 		max-width: 568px;
 		margin: 0 auto;
 	}
 	&__title {
-		margin-top: 192px;
+		margin-top: 12rem;
 	}
 	&__text {
 		color: $greyColor;
@@ -199,37 +205,37 @@
 		display: flex;
 		justify-content: space-between;
 		gap: 30px;
-		margin-top: 70px;
+		margin-top: 4.375rem;
 	}
 	&__item {
 		text-align: center;
 		border: 2px solid $lightGreyColor;
-		border-radius: 10px;
-		padding: 60px 25px 70px;
+		border-radius: 0.625rem;
+		padding: 3.75rem 1.5625rem 4.375rem;
 	}
 	&__item-title {
-		font-size: 20px;
+		font-size: 1.25rem;
 		font-weight: 500;
 		line-height: 140%;
-		padding-top: 47px;
+		padding-top: 2.9375rem;
 	}
 	&__item-text {
 		font-size: 1rem;
 		font-weight: 400;
 		color: $greyColor;
-		padding-top: 20px;
+		padding-top: 1.25rem;
 	}
 }
 
 // Locations
 .locations {
 	background-color: $lightGreyColor;
-	padding: 120px 0;
+	padding: 7.5rem 0;
 	&__top {
 		position: relative;
 	}
 	&__text {
-		padding-bottom: 70px;
+		padding-bottom: 4.375rem;
 	}
 	&__slider {
 		width: 1180px;
@@ -247,15 +253,15 @@
 	}
 	&__slider-box {
 		position: absolute;
-		bottom: 32px;
+		bottom: 2rem;
 		left: 28px;
 		right: 30px;
 		margin: 0 auto;
-		padding: 23px 20px;
+		padding: 1.4375rem 1.25rem;
 		width: 285px;
 		display: flex;
 		justify-content: space-between;
-		border-radius: 10px;
+		border-radius: 0.625rem;
 		border: 1px solid $grey2Color;
 		background: rgba(0, 34, 72, 0.3);
 		backdrop-filter: blur(10px);
@@ -265,11 +271,11 @@
 	}
 	&__slider-title {
 		@include eksellDisplayMedium-500;
-		font-size: 20px;
+		font-size: 1.25rem;
 		line-height: 100%;
 	}
 	&__slider-price {
-		font-size: 20px;
+		font-size: 1.25rem;
 		line-height: 120%;
 	}
 	&__swiper-button {
@@ -296,6 +302,253 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	transform: rotate(180deg);
+}
+
+.guideline {
+	background-image: url(../images/guideline-bg.webp);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	position: relative;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		margin-left: 3.875rem;
+		transform: translateY(100%);
+		align-items: center;
+	}
+	&__item {
+		max-width: 462px;
+		width: 100%;
+	}
+	&__item-videobtn {
+		background-color: transparent;
+		border: none;
+	}
+	&__text {
+		margin-bottom: 50px;
+	}
+	&__decor-1,
+	&__decor-2 {
+		position: absolute;
+		bottom: -8%;
+	}
+
+	&__decor-1 {
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+
+	&__decor-2 {
+		left: auto;
+		right: 0;
+	}
+
+	&__btn {
+		font-weight: 700;
+		line-height: 125%;
+	}
+}
+
+.videobtn-img {
+	width: 120px;
+	height: 120px;
+}
+
+// About
+.about {
+	padding: 120px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		gap: 1.25rem;
+	}
+	&__item-textbox {
+		flex-basis: 512px;
+	}
+	&__indicators {
+		margin-top: 3.125rem;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.625rem 0.8125rem;
+		width: 313px;
+	}
+	&__indicators-item {
+		border-radius: 10px;
+		border: 2px solid $lightGreyColor;
+		padding: 2rem 3.375rem;
+		text-align: center;
+	}
+	&__indicators-value {
+		font-size: 32px;
+		@include eksellDisplaySmall-550;
+		line-height: 106.25%;
+		color: $blueColor;
+	}
+}
+
+// Testimonials
+.testimonials {
+	padding-top: 120px;
+	padding-bottom: 3.125rem;
+	text-align: center;
+	background-color: $lightGreyColor;
+
+	&__inner {
+		width: 590px;
+		margin: 0 auto;
+	}
+	&__slider {
+		width: 500px;
+		overflow: hidden;
+		margin: 0 auto;
+	}
+	&__wrapper {
+		background-image: url(../images/testimonials-bg.webp);
+		background-repeat: no-repeat;
+		background-position: center center;
+		padding: 4.375rem 0 7.5rem;
+		position: relative;
+	}
+
+	&__slider-text {
+		font-size: 14px;
+		line-height: 171%;
+		padding-bottom: 0.875rem;
+	}
+	&__avatar-img {
+		border: 2px solid $whiteColor;
+		border-radius: 50%;
+		width: 98px;
+		height: 98px;
+		margin-bottom: 1.875rem;
+	}
+	&__blockquote {
+		border-radius: 10px;
+		background: $whiteColor;
+		padding: 5rem 3.125rem 1.875rem;
+		position: relative;
+	}
+	&__blockquote::before {
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		top: 30px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		background-image: url(../images/icons/quotation.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	&__author {
+		font-size: 12px;
+		font-weight: 700;
+		color: $defaultColor;
+		font-style: normal;
+		display: block;
+		line-height: 150%;
+	}
+	&__span {
+		font-size: 0.625rem;
+		color: $greyColor;
+		line-height: 140%;
+	}
+}
+
+// Pagination for slider .testimonials__slider
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 3.75rem;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+	width: 20px;
+	border-radius: 6px;
+}
+
+// Feed
+.feed {
+	padding: 7.5rem 0;
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 3.75rem;
+		width: 100%;
+	}
+	&__item-textbox {
+		width: 462px;
+	}
+	&__slider-img {
+		width: 320px;
+		height: 456px;
+	}
+	&__slider-img.border-radius-10 {
+		border-radius: 10px;
+	}
+	&__slider-img.border-radius-50 {
+		border-radius: 160px;
+	}
+}
+
+.feed__slider.swiper-initialized.swiper-horizontal.swiper-backface-hidden {
+	margin: 0 auto;
+	overflow: hidden;
+	margin-left: -8.125rem;
+}
+
+.contacts {
+	padding: 4.375rem 0;
+	&__inner {
+		border-radius: 40px;
+		background-color: $blueBgColor;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding-top: 1.875rem;
+	}
+	&__item {
+		flex-basis: 409px;
+		padding: 0 0.625rem;
+	}
+	&__item-img {
+		width: 404px;
+		object-fit: cover;
+	}
+}
+
+.footer {
+	&__inner {
+		position: relative;
+	}
+	&__inner::after {
+		position: absolute;
+		content: '';
+		bottom: 0;
+		height: 1px;
+		width: 100%;
+		background-color: #6976871a;
+	}
+	&__top-socials {
+		display: flex;
+		gap: 12px;
+	}
+	&__socials-img {
+		width: 40px;
+		height: 40px;
+	}
+	&__copy {
+		padding: 1.875rem 0 3.125rem;
+		text-align: center;
+	}
+	&__copy-text {
+		font-size: 0.875rem;
+	}
 }
 
 @import 'media';
