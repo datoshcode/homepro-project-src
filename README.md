@@ -1,4 +1,4 @@
-# tripgoal-project-src
+<h1>Open Source for Tripgoal Project</h1>
 <h2>Project Description</h2>
 <b>Development Date: 14.12.2023</b>
 <h3>Brief description:</h3>
