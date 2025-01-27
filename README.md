@@ -7,4 +7,4 @@
 
 <h3>Technologies Used: HTML, SCSS, BEM, GIT, JavaScript</h3>
 
-<p>The site in the form of a completed front-end version is located at: https://github.com/ovcharovcoder/tripgoal-frontend</p>
+<p>The site in the form of a completed front-end version is located at: https://github.com/ovcharovcoder/tripgoal-website</p>
